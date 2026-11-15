@@ -5,13 +5,13 @@ public class exercise2 {
         Intern cass = new Intern("Cass", 300);
 
         System.out.println("=========================== BONUS ==========================\n");
-        System.out.printf("Sal's bonus is: %.2f\n", sal.calculate_bonus());
-        System.out.printf("Dan's bonus is: %.2f\n", dan.calculate_bonus());
-        System.out.printf("Cass' bonus is: %.2f\n", cass.calculate_bonus());
+        System.out.printf("%s's bonus is: %.2f\n", sal.nameGetter(), sal.calculate_bonus());
+        System.out.printf("%s's bonus is: %.2f\n", dan.nameGetter(), dan.calculate_bonus());
+        System.out.printf("%s' bonus is: %.2f\n", cass.nameGetter(), cass.calculate_bonus());
         System.out.println("\n======================= GROSS SALARY =======================\n");
-        System.out.printf("Sal's Gross Salary: %.2f\n", sal.salaryGetter() + sal.calculate_bonus());
-        System.out.printf("Dan's Gross Salary: %.2f\n", dan.salaryGetter() + dan.calculate_bonus());
-        System.out.printf("Cass' Gross Salary: %.2f\n", cass.salaryGetter() + cass.calculate_bonus());
+        System.out.printf("%s's Gross Salary: %.2f\n", sal.nameGetter(), sal.salaryGetter() + sal.calculate_bonus());
+        System.out.printf("%s's Gross Salary: %.2f\n", dan.nameGetter(), dan.salaryGetter() + dan.calculate_bonus());
+        System.out.printf("%s' Gross Salary: %.2f\n", cass.nameGetter(), cass.salaryGetter() + cass.calculate_bonus());
         System.out.println("\n============================================================");
     }
 }
