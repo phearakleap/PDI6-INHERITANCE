@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class exercise4 {
     public static void main(String[] args){
         SavingsAccount svAcc = new SavingsAccount(892345098, 1567.53f, 4.3f);
