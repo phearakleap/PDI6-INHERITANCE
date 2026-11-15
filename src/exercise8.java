@@ -8,7 +8,7 @@ public class exercise8 {
         products.add(new Product("Baked Beans", 1.5));
         products.add(new Electronics("Laptop", 750.67, 5));
         products.add(new Clothing("Hoodie", 10.5, 'L'));
-        products.add(new Book("The Summer You Were There", 13.7, "Yuama"));
+        products.add(new Books("The Summer You Were There", 13.7, "Yuama"));
 
         System.out.println("=====================================================\n");
         for(Product product : products){
@@ -64,10 +64,10 @@ class Clothing extends Product{
     }
 }
 
-class Book extends Product{
+class Books extends Product{
     private String author;
 
-    Book(String name, double price, String author){
+    Books(String name, double price, String author){
         super(name, price);
         this.author = author;
     }
